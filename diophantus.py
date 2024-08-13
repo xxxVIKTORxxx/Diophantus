@@ -1,7 +1,7 @@
 
 def equastion(y_min, y_max, mult_x, mult_y, result):
     y_list = []
-    for y in range(y_max):
+    for y in range(y_max+1):
         if y >= y_min and y <=y_max:
             y_list.append(y)
 
