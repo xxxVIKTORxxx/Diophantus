@@ -1,16 +1,10 @@
-y_min = 5
-y_max = 10
 
-y_list = []
+def equastion(y_min, y_max, mult_x, mult_y, result):
+    y_list = []
+    for y in range(y_max):
+        if y >= y_min and y <=y_max:
+            y_list.append(y)
 
-for y in range(10):
-    if y >= y_min and y <=y_max:
-        y_list.append(y)
-
-print(y_list)
-
-
-def equastion(mult_x, mult_y, y_list, result):
     x_list = []
     for y in y_list:
         x = ( result - (mult_y*y) ) / mult_x
@@ -22,4 +16,4 @@ def equastion(mult_x, mult_y, y_list, result):
     return x_list
 
 # 5x+3y=22
-print( equastion(5, 3, y_list, 22) )
+print( equastion(5, 10, 5, 3, 22) )
