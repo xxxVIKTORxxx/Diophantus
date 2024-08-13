@@ -15,5 +15,6 @@ def equastion(y_min, y_max, mult_x, mult_y, result):
     
     return x_list
 
+# 5 <= y <= 10
 # 5x+3y=22
 print( equastion(5, 10, 5, 3, 22) )
